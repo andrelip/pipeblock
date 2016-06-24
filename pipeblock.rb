@@ -1,6 +1,7 @@
+require 'binding_of_caller'
+
 module Kernel
   def pipe(*args, &block)
-    require 'binding_of_caller'
     scope_object = binding.of_caller(1).eval('self')
     start_object = args[0]
     pipe = Pipeline::Pipeline.new scope_object, &block
