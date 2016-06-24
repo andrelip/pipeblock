@@ -2,6 +2,7 @@ Concept only. To test just run pipeblock.rb.
 
 Usage:
 
+```ruby
 def sum(a, b)
   a + b
 end
@@ -15,3 +16,4 @@ pipe 10 do
   divide(2)
   puts
 end
+```
