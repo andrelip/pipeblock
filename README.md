@@ -1,7 +1,7 @@
 Concept only. To test just run pipeblock.rb.
 It passes the result of previous line as the first argument of the next.
 
-Usage:
+Example:
 
 ```ruby
 def sum(a, b)
