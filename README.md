@@ -9,7 +9,7 @@ def sum(a, b)
 end
 
 def divide(a, b)
- a / b rescue 0
+  a / b rescue 0
 end
 
 pipe 10 do
