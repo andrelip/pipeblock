@@ -1,4 +1,5 @@
 Concept only. To test just run pipeblock.rb.
+It passes the result of previous line as the first argument of the next.
 
 Usage:
 
@@ -16,4 +17,6 @@ pipe 10 do
   divide(2)
   puts
 end
+
+# => 50
 ```
