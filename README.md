@@ -13,8 +13,8 @@ def divide(a, b)
 end
 
 pipe 10 do
-  sum(90)
-  divide(2)
+  sum 90
+  divide 2
   puts
 end
 
