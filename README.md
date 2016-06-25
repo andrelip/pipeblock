@@ -2,7 +2,7 @@
 Pipeblock brings the Pipe Operator flow of Functional Programming to Ruby.
 It provides a very clean flow for working with static methods.
 
-Add to Your Project:
+How to add to Your Project:
 
 ```ruby
 gem 'pipeblock'
