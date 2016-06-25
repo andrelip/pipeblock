@@ -1,4 +1,5 @@
 require "pipeblock/version"
+require 'binding_of_caller'
 
 module Kernel
   def pipe(*args, &block)
