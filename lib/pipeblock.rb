@@ -30,7 +30,7 @@ module Pipeblock
     end
 
     def inspect
-      last_value.present? ? last_value.inspect : @reference.inspect
+      last_value ? last_value.inspect : @reference.inspect
     end
 
     def respond_to? (message)
