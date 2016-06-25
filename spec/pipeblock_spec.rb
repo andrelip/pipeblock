@@ -42,8 +42,9 @@ describe Pipeblock do
 
   it 'should work with external encapsuled on lambda' do
     result = pipe 0.0 do
-      external -> (entry_value, &b) { Math.cos entry_value }
+      e -> (entry_value, &b) { Math.cos entry_value }
     end
     result.should == 1.0
   end
+
 end

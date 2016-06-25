@@ -66,6 +66,7 @@ module Pipeblock
       @last_value = proc.call(last_value)
       @reference = last_value
     end
+    alias_method :e, :external
 
     private
 
