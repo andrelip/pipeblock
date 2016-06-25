@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'binding_of_caller'
 
 describe Pipeblock do
   it 'should work have his own inspect defined' do
