@@ -40,18 +40,18 @@ def add_day(date, days = 1)
 end
 
 result_date = pipe Date.today do
-           add_day
-           add_day 8
-         end
+                add_day
+                add_day 8
+              end
 
 result_date.should > Date.today + 8
 result_date.should < Date.today + 10
 ```
 
-Working if external dependencies
+Calling external classes
 ```ruby
 pipe 0.0 do
-  e -> (entry_value, &b) { Math.cos entry_value }
+  e -> (entry_value) { Math.cos entry_value }
 end
 # => 1.0
 ```
