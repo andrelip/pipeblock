@@ -19,17 +19,15 @@ Or install it yourself as:
 ## Usage
 ```ruby
 # sample method
-def cut(text, pattern, replace: '')
-  text.gsub(pattern, replace)
+def cut(text, pattern)
+  text.gsub(pattern, '')
 end
 
 pipe 'http://www.google.com' do
   cut('http://www.')
   cut('.com')
-  cut('gle', replace: "mba!")
-  puts
 end
-# goomba!
+# => google
 ```
 
 ```ruby
@@ -40,12 +38,12 @@ def add_day(date, days = 1)
 end
 
 result_date = pipe Date.today do
-                add_day
-                add_day 8
+                add_day 5
+                add_day 5
               end
 
-result_date.should > Date.today + 8
-result_date.should < Date.today + 10
+result_date.should > Date.today + 5
+result_date.should <= Date.today + 10
 ```
 
 Calling external classes
